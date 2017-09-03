@@ -10,12 +10,6 @@
 }
 
 // define colors :
-// @hsk-purple: #A324F2;
-// @hsk-green: #67F230;
-// @hsk-blue: #2CB3DB;
-// @hsk-yellow: #F2DA24;
-// @hsk-gray: #BAB1D8;
-
 @hsk-purple: #CA80F7;
 @hsk-purple2: #A324F2;
 @hsk-green: #2AD728;
@@ -60,8 +54,23 @@
 @navigation-desktop-level0-item__active__color: @color-white;
 @navigation-desktop-level0-item__active__background: @hsk-purple2;
 
+// @navigation-desktop-level1-item__color: @hsk-purple2;
+
+
 @submenu-desktop-item__hover__background: @hsk-purple2;
-@submenu-desktop-item__active__border-color: @bb-pink2;
+@submenu-desktop-item__active__border-color: @hsk-purple2;
+@submenu-desktop-item__color: @hsk-purple2;
+@submenu-desktop-item__hover__color: @color-white;
+
+
+// site colors:
+@navigation__background: @hsk-purple;
+
+@navigation-level0-item__color: @color-white;
+@navigation-level0-item__active__border-color: @hsk-green;
+@navigation-level0-item__active__color: '';
+
+@submenu-item__active__border-color: @color-white;
 
 @copyright__background-color: @hsk-purple2;
 
@@ -90,7 +99,7 @@
 	.checkout-cart-index, .cms-home,
    	.page-layout-2columns-left, .page-layout-1column  {
 		& .logo {
-               		margin: 0px auto 10px 0;
+               		margin: -50px auto 10px 0;
 		}
    	}
 }
@@ -128,16 +137,22 @@
         .nav-sections-item-title.active {
                 border: solid;
                 border-width: 0 0 3px;
-                border-color: @bb-pink2;
+                border-color: @color-white;
                 background: @hsk-purple;
         }
 
-//	.logo img {
-//		margin: -10px auto -10px 0;
-//	}
+	.logo {
+		max-width: 75%;
+	}
+
+
+	.logo img {
+		content:url('@{baseDir}images/houtenspeelgoedkeukentje-header-02.png');
+	}
+
 
         a, .alink {
-                color: @bb-yellow;
+                color: @color-white;
         }
 
         .nav-sections-item-title {
@@ -150,19 +165,6 @@
 //                background: @color-white;
 //        }
 }
-
-// site colors:
-@navigation__background: @hsk-purple;
-
-@subment-item__active__border-color: black;
-
-// @navigation-level0-item__active__border-color: @bb-pink2;
-@navigation-level0-item__color: @color-white;
-@navigation-level0-item__active__border-color: @hsk-green;
-@navigation-level0-item__active__color: '';
-
-@submenu-item__active__border-color: @bb-pink2;
-
 
 /*
 lib/web/css/source/lib/variables/_messages.less
